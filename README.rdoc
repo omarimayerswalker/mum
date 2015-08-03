@@ -17,6 +17,9 @@ Things you may want to cover:
 
 * System dependencies
 
+Bootstrap
+Google fonts: Teko; Rajdhani
+
 * Configuration
 
 * Database creation
@@ -30,7 +33,5 @@ postgrespl
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
 
 <tt>rake doc:app</tt>.

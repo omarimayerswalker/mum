@@ -7,6 +7,7 @@
 * User should be able to view all users photos in one place.
 * User should be able to see just their photos.
 * User should be able to search for new photos through Google Photos and select and connect them to their photo stream.
-* User should be able to add photos to another users feed based on key words set by the feed owner
+* User should be able to add photos to another users feed based on key words set by the feed owner.
 * User should be able to remove photos.
 * User should be able to up and down vote images placed on thier feed by other users.
+* User should be able to change the look of thier photo.
