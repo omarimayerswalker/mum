@@ -1,4 +1,4 @@
-# mum
+# mum - share ideas through photos, not words
 
 # User Stories
 
