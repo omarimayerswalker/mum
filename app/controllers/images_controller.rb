@@ -30,6 +30,14 @@ class ImagesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def destroy
+    @image.destroy
+    redirect_to root_path
+  end
+
   private
 
   def image_params
