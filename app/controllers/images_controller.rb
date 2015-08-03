@@ -3,6 +3,7 @@ class ImagesController < ApplicationController
   before_action :find_image, only: [:show, :edit, :update, :destroy]
 
   def index
+    @images = Image.all.order("created_at DESC")
   end
 
   def show

@@ -1,1 +1,5 @@
 <h1>Index</h1>
+
+<% @images.each do |image| %>
+    <h2><%= link_to image.image_url, image  %></h2>
+    <% end %>
