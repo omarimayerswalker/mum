@@ -14,6 +14,7 @@ Users can post images on thier personal page. Other users can post images to to 
 
 Bootstrap
 Google fonts: Teko; Rajdhani
+Animate.css
 
 * Configuration
 
