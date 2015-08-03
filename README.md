@@ -1,4 +1,8 @@
-# mum - share ideas through photos, not words
+# mum
+
+share ideas through photos, not words
+
+Users can post images on thier personal page. Other users can post images to to the original image based key words set by the poster.
 
 # User Stories
 
