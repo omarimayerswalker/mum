@@ -1,5 +1,6 @@
 class ImagesController < ApplicationController
 
+  before_action :authenticate_user!
   before_action :find_image, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -14,7 +15,7 @@ class ImagesController < ApplicationController
   end
 
   def create
-    @image = Image.new(image_params)
+    @image = current_user.images.new(image_params)
 
     if @image.save
       redirect_to @image, notice: "Image created"
