@@ -17,10 +17,11 @@ class ImagesController < ApplicationController
   end
 
   def create
+    @user = User.find(params[:user_id])
     @image = current_user.images.new(image_params)
 
     if @image.save
-      redirect_to @image, notice: "Image created"
+      redirect_to user_image_path(@user, @image), notice: "Image created"
       else redirect "new"
     end
   end
