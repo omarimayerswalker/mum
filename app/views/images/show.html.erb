@@ -5,5 +5,5 @@
 <p><%= @image.key_word %></p>
 
 <%= link_to "back", root_path  %>
-<%= link_to "edit", edit_user_image_path  %>
-<%= link_to "remove",user_image_path, method: :delete, data: { confirm: "Remove image?" } %>
+<%= link_to "edit", edit_image_path  %>
+<%= link_to "remove",image_path, method: :delete, data: { confirm: "Remove image?" } %>

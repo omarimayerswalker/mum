@@ -2,7 +2,7 @@ class ImagesController < ApplicationController
 
   before_action :authenticate_user!
   before_action :find_image, only: [:show, :edit, :update, :destroy]
-  before_action :find_user, only: [:new, :show, :edit, :update, :destroy]
+  before_action :find_user, only: [:new]
 
   def index
     @user = current_user
@@ -10,6 +10,7 @@ class ImagesController < ApplicationController
   end
 
   def show
+    @image = Image.find(params[:id])
   end
 
   def new
