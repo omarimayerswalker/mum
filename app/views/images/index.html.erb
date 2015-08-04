@@ -1,4 +1,4 @@
-<%= link_to 'New image', new_user_image_path(:user_id) %>
+<%= link_to 'New image', new_user_image_path(@user.id) %>
 
 <% @images.each do |image| %>
     <h2><%= link_to image_tag(image.image_url), image %></h2>

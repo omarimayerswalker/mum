@@ -5,6 +5,7 @@ class ImagesController < ApplicationController
   before_action :find_user, only: [:new, :show, :edit, :update, :destroy]
 
   def index
+    @user = current_user
     @images = Image.all.order("created_at DESC")
   end
 
