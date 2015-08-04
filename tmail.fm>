@@ -1,0 +1,113 @@
+[33mcommit 54880354f8d90cb80716191d653d6716f6526eb1[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Tue Aug 4 10:12:52 2015 -0400
+
+    added new migration AddUserIdToImages; form is still not working since associating models
+
+[33mcommit 06da64a85e05207b40969e8d4316f65a648855aa[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Tue Aug 4 07:49:10 2015 -0400
+
+    working on converting routes to use user
+
+[33mcommit 8b1aed1c595192472a8da70b90e7106b007fa4b9[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 21:40:53 2015 -0400
+
+    index views are not images with links
+
+[33mcommit 26d62414c923319ea10f44e943801cabec72c0c4[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 21:30:58 2015 -0400
+
+    added sign in + out
+
+[33mcommit 0e4097c5908e5a541a41478787f4a75ae32a429d[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 15:36:53 2015 -0400
+
+    added devise config and db migrations
+
+[33mcommit a289d25287d27216b8cb0020cf5d17beac2955f9[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 15:27:35 2015 -0400
+
+    added link to new view on index view; added cancel to new view
+
+[33mcommit 7f395aeeb3f6cfe5de8abd6e1492a4a16dc38e98[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 15:19:51 2015 -0400
+
+    added destroy action
+
+[33mcommit 015e991753c2e33770dcbc06928fcde63e0164e5[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 14:48:30 2015 -0400
+
+    added index view; defined images index action
+
+[33mcommit 2bae28435b7b6309d15e88421ff1f8a88c8d6265[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 14:30:03 2015 -0400
+
+    updated images controller and application view
+
+[33mcommit 5cc43d38096aeb8885f2f9044d02966f0614c199[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 14:29:06 2015 -0400
+
+    added images edit and updated show views
+
+[33mcommit efff99943ecdf81bfc962a0ea1797d4959717971[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 12:55:02 2015 -0400
+
+    added image partial form
+
+[33mcommit 0bd948eafc37c0b2f3e1d603f80d2683880cffc6[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 12:44:17 2015 -0400
+
+    added create migration; image index and new views
+
+[33mcommit 2df77ab032afde43693c591581535423395d5b3b[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 11:18:21 2015 -0400
+
+    created devise branch
+
+[33mcommit cb2ad582404e0449d316ae0889c63323e43d3d70[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 09:41:02 2015 -0400
+
+    updated readme
+
+[33mcommit acd9cddb566d8bf3b9b2a581ac4ff11db107097f[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 09:27:01 2015 -0400
+
+    modified user_stories; readme; added wireframe images
+
+[33mcommit 47f7915ea76687336e8f48afbd1653299efa070e[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 08:25:39 2015 -0400
+
+    updated readme
+
+[33mcommit bb20a293a35ba5f6ece894bc1043a4eee40fbccd[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 08:18:53 2015 -0400
+
+    updated readme; user_stories
+
+[33mcommit 7d790f578bf71252ad893d86abdb0a1507708368[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 08:12:15 2015 -0400
+
+    added planning directory; including wireframes directory; user_stories file
+
+[33mcommit f1002ea53d8d6bdfd4935bc2597ad70dda903f9d[m
+Author: Omari Mayers-Walker <omari@fastmail.fm>
+Date:   Mon Aug 3 08:02:33 2015 -0400
+
+    intitial commit
