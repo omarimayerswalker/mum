@@ -46,7 +46,7 @@ class ImagesController < ApplicationController
   private
 
   def image_params
-    params.require(:image).permit(:image_url, :key_words)
+    params.require(:image).permit(:image_url, :key_word)
   end
 
   def find_image
