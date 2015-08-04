@@ -1,6 +1,5 @@
-<h1>Index</h1>
 <%= link_to 'New image', new_image_path %>
 
 <% @images.each do |image| %>
-    <h2><%= link_to image.image_url, image  %></h2>
+    <h2><%= link_to image_tag(image.image_url), image %></h2>
     <% end %>
