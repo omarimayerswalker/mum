@@ -1,22 +1,39 @@
 * {
-    text-decoration: none;
     font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
 }
-body {
-   font-family: 'Rajdhani', sans-serif;
+
+a:hover {
+    color: grey;
 }
+
 .app_name a{
    font-family: 'Teko', sans-serif;
    color: #E86249;
    font-size: 4em;
-   text-decoration: none;
    font-weight: bold;
 }
 
+.app_name a:hover {
+   text-decoration: none;
+   color: grey;
+}
+
 .plus a{
-    color: black;
+    color: #67583F;
     font-size: 5em;
     font-weight: bold;
     padding: 0;
     margin: 0;
+}
+
+.plus a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.keyword {
+    color: #E86249;
+    font-size: 2em;
+    font-weight: bold;
 }
