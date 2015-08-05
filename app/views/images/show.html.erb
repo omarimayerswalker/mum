@@ -1,9 +1,20 @@
-<img src="<%= @image.image_url %>">
+<div class="container">
+    <img src="<%= @image.image_url %>">
+</div>
 
-<%= :flash %>
-
-<div class="container"><%= @image.key_word %></div>
-
-<%= link_to "back", root_path  %>
-<%= link_to "edit", edit_image_path  %>
-<%= link_to "remove",image_path, method: :delete, data: { confirm: "Remove image?" } %>
+<div class="container">
+    <%= @image.key_word %>
+</div>
+<div class="container">
+    <ul class="nav navbar-nav navbar-left">
+      <li>
+          <%= link_to "back", root_path  %>
+      </li>
+      <li>
+          <%= link_to "edit", edit_image_path  %>
+      </li>
+      <li>
+          <%= link_to "remove",image_path, method: :delete, data: { confirm: "Remove image?" } %>
+      </li>
+    </ul>
+</div>
