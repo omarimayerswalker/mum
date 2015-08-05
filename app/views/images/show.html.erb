@@ -22,3 +22,11 @@
 <div class="container">
     <%= link_to '+', new_image_comment_path(@image.id) %>
 </div>
+
+<div class="container">
+
+    <% @comments.each do |comment| %>
+            <h2><img src="<%=  comment.photo_url %>"></h2>
+            <%#= link_to "remove",@comment , method: :delete, data: { confirm: "Remove image?" } %>
+                <% end %>
+</div>

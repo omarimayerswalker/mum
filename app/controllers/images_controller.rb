@@ -11,6 +11,8 @@ class ImagesController < ApplicationController
 
   def show
     @image = Image.find(params[:id])
+    @comments = @image.comments.all
+    @comment = @image.comments.build
   end
 
   def new

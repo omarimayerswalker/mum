@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
 
-  before_action :find_image, only: [:index, :new]
+  before_action :find_image, only: [:show, :index, :new]
 
   def index
     @comment = Comment.all.order("created_at DESC")
