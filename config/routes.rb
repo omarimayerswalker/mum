@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root "images#index"
+
   devise_for :users, :path => 'accounts'
 
   resources :images
@@ -8,6 +10,5 @@ Rails.application.routes.draw do
     resources :images
   end
 
-  root "images#index"
 
 end
