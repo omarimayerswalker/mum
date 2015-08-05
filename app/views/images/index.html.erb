@@ -1,5 +1,11 @@
 <%= link_to '+', new_user_image_path(@user.id) %>
 
-<% @images.each do |image| %>
-    <h2><%= link_to image_tag(image.image_url), image %></h2>
-    <% end %>
+    <div id="images" class="transitions-enabled">
+
+        <% @images.each do |image| %>
+            <div class="box panel panel-default">
+                <h2><%= link_to image_tag(image.image_url), image %></h2>
+            </div>
+            <div class="panel-body"></div>
+            <% end %>
+    </div>
