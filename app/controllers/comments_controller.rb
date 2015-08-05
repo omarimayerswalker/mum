@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
 
-  before_action :find_image, only: [:show, :index, :new]
+  before_action :find_image, only: [:show, :index, :new, :destroy]
 
   def index
     @comment = Comment.all.order("created_at DESC")
@@ -38,6 +38,7 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    @comment = Comment.find(params[:id])
     @comment.destroy
     redirect_to root_path
   end
