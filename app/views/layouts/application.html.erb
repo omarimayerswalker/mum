@@ -4,6 +4,7 @@
 <head>
     <title>Mum</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <link href='http://fonts.googleapis.com/css?family=Teko:700|Rajdhani' rel='stylesheet' type='text/css'>
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
             <%= csrf_meta_tags %>
 </head>
@@ -22,14 +23,14 @@
         </div>
     </nav>
     <div class="container">
-        <h1><%= link_to 'mum', root_path %></h1>
+        <h1 class="app_name"><%= link_to 'mum', root_path %></h1>
     </div>
 
-    <div class="container">
+    <div class="container flash">
         <%= flash[:notice]  %>
     </div>
     <div class="container">
-            <%= yield %>
+        <%= yield %>
     </div>
 </body>
 

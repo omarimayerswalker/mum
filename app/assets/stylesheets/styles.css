@@ -1,0 +1,22 @@
+* {
+    text-decoration: none;
+    font-size: 20px;
+}
+body {
+   font-family: 'Rajdhani', sans-serif;
+}
+.app_name a{
+   font-family: 'Teko', sans-serif;
+   color: #E86249;
+   font-size: 4em;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.plus a{
+    color: black;
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
