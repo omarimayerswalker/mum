@@ -24,7 +24,7 @@ class ImagesController < ApplicationController
     @image = current_user.images.new(image_params)
 
     if @image.save
-      redirect_to user_image_path(@user, @image), notice: "Image created"
+      redirect_to images_path(@user, @image), notice: "Image created"
       else redirect "new"
     end
   end
