@@ -43,6 +43,12 @@ class CommentsController < ApplicationController
     redirect_to root_path
   end
 
+  def upvote
+    @comment = Comment.find(params[:id])
+    @comment.upvote_by current_user
+    redirect_to :back
+  end
+
   private
 
   def comment_params
