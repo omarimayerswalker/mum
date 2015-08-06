@@ -1,5 +1,7 @@
 class CommentsController < ApplicationController
 
+  # before_action :authorized
+  before_action :authenticate_user!
   before_action :find_image, only: [:show, :index, :new, :destroy]
 
   def index
@@ -58,4 +60,12 @@ class CommentsController < ApplicationController
   def find_image
     @image = Image.find(params[:image_id])
   end
+
+  def find_user
+    @user = User.find(params[:id])
+  end
+
+  # def authorized
+    # current_user.id == User.find(params[:id])
+  # end
 end
