@@ -14,7 +14,7 @@
 <div class="container">
     <ul class="nav navbar-nav navbar-left show-nav">
         <li>
-            <%= link_to 'back', root_path  %>
+            <%= link_to 'back', images_path  %>
         </li>
         <li>
             <%= link_to 'edit', edit_image_path  %>
@@ -29,8 +29,8 @@
 
     <% @comments.each do |comment| %>
         <h2><img src="<%=  comment.photo_url %>"></h2>
-        <%= link_to like_comment_path(@image, comment) , method: :put, class: "btn btn-default" do %>
-            <span class="glyphicon glyphicon-chevron-up">
+        <%= link_to like_comment_path( comment) , method: :put, class: "btn btn-default" do %>
+            <span class="glyphicon glyphicon-chevron-up"><%= comment.get_upvotes.size  %></span>
                 <% end %>
             <%= link_to image_comment_path(@image, comment) , method: :delete, data: { confirm: "Remove image?" }, class: "btn btn-default" do %>
                 <span class="glyphicon glyphicon-remove">

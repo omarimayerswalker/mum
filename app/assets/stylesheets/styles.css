@@ -54,3 +54,8 @@ a:hover {
     text-decoration: none;
     color: grey;
 }
+
+.flash {
+    color: white;
+    font-size: 2em;
+}

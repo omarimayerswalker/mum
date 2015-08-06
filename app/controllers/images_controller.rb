@@ -24,14 +24,14 @@ class ImagesController < ApplicationController
     @image = current_user.images.new(image_params)
 
     if @image.save
-      redirect_to images_path(@user, @image), notice: "Image created"
+      redirect_to images_path(@user, @image), notice: "yes! you have successfully added an image!"
       else redirect "new"
     end
   end
 
   def update
     if @image.update(image_params)
-      redirect_to @image, notice: "Image was updated"
+      redirect_to @image, notice: "great! the image has been updated!"
     else
       render "edit"
     end

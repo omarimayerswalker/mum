@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
     @comment = Comment.create!(comment_params.merge(image: @image))
 
     if @comment.save
-      redirect_to user_image_path(@user, @image), notice: "Comment created"
+      redirect_to user_image_path(@user, @image), notice: "your comment image has been added!"
     else
       redirect "new"
     end
@@ -28,7 +28,7 @@ class CommentsController < ApplicationController
 
   def update
     if @comment.update(comment_params)
-      redirect @comment, notice: "Comment was updated"
+      redirect @comment, notice: "your comment image has been updated!"
     else
       render "edit"
     end
@@ -45,7 +45,7 @@ class CommentsController < ApplicationController
 
   def upvote
     @comment = Comment.find(params[:id])
-    @comment.upvote_by current_user
+    @comment.upvote_by current_user, notice: "you liked this image!"
     redirect_to :back
   end
 
