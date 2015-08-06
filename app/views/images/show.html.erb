@@ -5,22 +5,24 @@
 <div class="container keyword">
     <%= @image.key_word %>
 </div>
-<div class="container">
-    <ul class="nav navbar-nav navbar-left">
-        <li>
-            <%= link_to "back", root_path  %>
-        </li>
-        <li>
-            <%= link_to "edit", edit_image_path  %>
-        </li>
-        <li>
-            <%= link_to "remove",image_path, method: :delete, data: { confirm: "Remove image?" } %>
-        </li>
-    </ul>
+
+
+<div class="container plus">
+    <%= link_to '+', new_image_comment_path(@image.id) %>
 </div>
 
 <div class="container">
-    <%= link_to '+', new_image_comment_path(@image.id) %>
+    <ul class="nav navbar-nav navbar-left show-nav">
+        <li>
+            <%= link_to 'back', root_path  %>
+        </li>
+        <li>
+            <%= link_to 'edit', edit_image_path  %>
+        </li>
+        <li>
+            <%= link_to 'remove',image_path, method: :delete, data: { confirm: "Remove image?" } %>
+        </li>
+    </ul>
 </div>
 
 <div class="container">

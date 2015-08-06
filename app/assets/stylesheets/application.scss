@@ -61,6 +61,7 @@ nav {
 	  	padding: 25px 10px;
 	   	a {
         
+	      background: #252525;
 				color: grey;
 	  	}
 	  }
@@ -88,4 +89,8 @@ textarea {
 
 .btn {
     background: grey;
+}
+
+ul li a:hover {
+	  background: #252525;
 }

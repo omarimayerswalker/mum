@@ -41,3 +41,16 @@ a:hover {
 .btn {
     background: grey;
 }
+
+.show-nav a{
+	  background: #252525;
+    color: #67583F;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.show-nav a:hover {
+	  background: #252525;
+    text-decoration: none;
+    color: grey;
+}
