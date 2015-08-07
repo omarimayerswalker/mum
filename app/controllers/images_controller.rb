@@ -46,6 +46,9 @@ class ImagesController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+  end
+
   private
 
   def image_params
@@ -59,9 +62,5 @@ class ImagesController < ApplicationController
   def find_user
     @user = User.find(params[:user_id])
   end
-
-  # def authorized
-    # current_user.id == User.find(params[:user_id])
-  # end
 
 end

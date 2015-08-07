@@ -51,6 +51,13 @@ class CommentsController < ApplicationController
     redirect_to :back
   end
 
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['name Like ?', "%#{search}"])
+      else find(:all)
+    end
+  end
+
   private
 
   def comment_params
@@ -65,7 +72,4 @@ class CommentsController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  # def authorized
-    # current_user.id == User.find(params[:id])
-  # end
 end

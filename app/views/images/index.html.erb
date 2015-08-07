@@ -1,12 +1,13 @@
-<div class="container plus"><%= link_to '+', new_user_image_path(@user.id) %>
+<div class="container plus">
+    <%= link_to '+', new_user_image_path(@user.id) %>
 </div>
 
-    <div id="images" class="transitions-enabled">
+<div id="images" class="transitions-enabled">
 
-        <% @images.each do |image| %>
-            <div class="box panel panel-default">
-                <h2><%= link_to image_tag(image.image_url), image %></h2>
-            </div>
-            <div class="panel-body"></div>
-            <% end %>
-    </div>
+    <% @images.each do |image| %>
+        <div class="box panel panel-default">
+            <h2><%= link_to image_tag(image.image_url), image %></h2>
+        </div>
+        <div class="panel-body"></div>
+        <% end %>
+</div>

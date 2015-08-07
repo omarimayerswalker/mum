@@ -34,8 +34,8 @@
             <span class="glyphicon glyphicon-chevron-up"></span>
             <%= comment.get_upvotes.size  %>
                 <% end %>
-            <%= link_to image_comment_path(@image, comment) , method: :delete, data: { confirm: "Remove image?" }, class: "btn btn-default" do %>
-                <span class="glyphicon glyphicon-remove">
+                    <%= link_to image_comment_path(@image, comment) , method: :delete, data: { confirm: "Remove image?" }, class: "btn btn-default" do %>
+                        <span class="glyphicon glyphicon-remove">
                     <% end %>
     <% end %>
 </div>
