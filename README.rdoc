@@ -8,26 +8,31 @@ Users can post images on thier personal page. Other users can post images to to 
 
 * Ruby version
 
-2.2.1
+  2.2.1
 
 * System dependencies
 
-Bootstrap
-Google fonts: Teko; Rajdhani
-Animate.css
+  Google fonts: Teko; Rajdhani
+
+  Required Gems:
+
+  acts_as_votable 0.10.0
+
+  bootstrap-sass 3.3.5.1
+
+  devise 3.5.1
+
+  masonry-rails 0.2.4
 
 * Configuration
 
+  This app requires postgresql as its database.
+  Make sure you have Acts as Votable, bootstrap-sass, devise and masonry-rails in your Gemfile.
+
 * Database creation
 
-postgrespl
+  postgrespl
 
-* Database initialization
+* Unsolved Issues
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-<tt>rake doc:app</tt>.
+  The app still needs a search feature that filters the images on the index page based on key words

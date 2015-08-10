@@ -4,14 +4,6 @@ class CommentsController < ApplicationController
   before_action :authenticate_user!
   before_action :find_image, only: [:show, :index, :new, :destroy]
 
-  def index
-    @comment = Comment.all.order("created_at DESC")
-  end
-
-  def show
-    @comment = Comment.find(params[:id])
-  end
-
   def new
     @comment = Comment.new
   end
