@@ -31,11 +31,11 @@
     <% @comments.each do |comment| %>
         <h2><img src="<%=  comment.photo_url %>"></h2>
         <%= link_to like_comment_path( comment) , method: :put, data: {notice: "vote confirmed!"}, class: "btn btn-default" do %>
-            <span class="glyphicon glyphicon-chevron-up"></span>
-            <%= comment.get_upvotes.size  %>
-                <% end %>
-                    <%= link_to image_comment_path(@image, comment) , method: :delete, data: { confirm: "Remove image?" }, class: "btn btn-default" do %>
-                        <span class="glyphicon glyphicon-remove">
-                    <% end %>
+        <span class="glyphicon glyphicon-chevron-up"></span>
+        <%= comment.get_upvotes.size  %>
+        <% end %>
+        <%= link_to image_comment_path(@image, comment) , method: :delete, data: { confirm: "Remove image?" }, class: "btn btn-default" do %>
+        <span class="glyphicon glyphicon-remove">
+        <% end %>
     <% end %>
 </div>

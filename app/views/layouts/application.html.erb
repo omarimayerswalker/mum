@@ -4,26 +4,23 @@
 <head>
     <title>Mum</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-        <link href='https://fonts.googleapis.com/css?family=Teko:700|Rajdhani' rel='stylesheet' type='text/css'>
-        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-            <%= csrf_meta_tags %>
+    <link href='https://fonts.googleapis.com/css?family=Teko:700|Rajdhani' rel='stylesheet' type='text/css'>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 </head>
 
 <body>
     <nav class="navbar navbar-default">
-        <div class="container">
-
+    <div class="container">
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                     <%= form_tag images_path, :method => 'get' do  %>
                         <%= text_field_tag :search, params[:search] %>
-                            <%= submit_tag "search", :name => nil %>
-                                <% end %>
+                        <%= submit_tag "search", :name => nil %>
+                    <% end %>
                 </div>
             </form>
-
             <ul class="nav navbar-nav navbar-right">
-                </li>
                 <li>
                     <%= link_to 'sign in', user_session_path %>
                 </li>
@@ -36,7 +33,6 @@
     <div class="container">
         <h1 class="app_name animate pulse"><%= link_to 'mum', root_path %></h1>
     </div>
-
     <div class="container flash">
         <%= flash[:notice]  %>
     </div>
@@ -44,5 +40,4 @@
         <%= yield %>
     </div>
 </body>
-
 </html>
